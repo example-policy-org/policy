@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v2.4.0
 
       - name: Get kyverno
-        run: wget -q -O - https://github.com/kyverno/kyverno/releases/download/v1.5.4/kyverno-cli_v1.5.4_linux_x86_64.tar.gz tar -C /usr/local/bin -xzf - kyverno
+        run: wget -q -O - https://github.com/kyverno/kyverno/releases/download/v1.5.4/kyverno-cli_v1.5.4_linux_x86_64.tar.gz | tar -C /usr/local/bin -xzf - kyverno
 
       - name: Kyverno tests
         run: kyverno test kubernetes/kyverno
