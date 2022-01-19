@@ -37,7 +37,7 @@ jobs:
           tar -C /usr/local/bin -xzf - kyverno
 
       - name: Kyverno tests
-        run: kyverno test kubernetes/kyverno
+        run: kyverno test kubernetes/kyverno/require-department-label
 
   release:
     if: ${{ github.ref == 'refs/heads/main' }}
