@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: require-department-label-pass0
   labels:
-    mycompany.com/department: finance
+    mycompany.com/departmentr: finance
     mycompany.com/policy-version: "1.0.0"
 spec:
   containers:
