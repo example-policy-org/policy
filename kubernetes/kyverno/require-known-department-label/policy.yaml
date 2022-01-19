@@ -1,7 +1,7 @@
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:
-  name: require-known-department-label-1.1.0
+  name: require-known-department-label
   annotations:
     policies.kyverno.io/title: Require Known Department Label
     policies.kyverno.io/category: Example Org Policy
